@@ -12,13 +12,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return  const MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
         body:SafeArea(
           child:Column(
             children:<Widget>[
-              const CircleAvatar(
+              CircleAvatar(
                 radius: 60.0,
                 //backgroundColor: Colors.red,
                 backgroundImage: AssetImage("Images/T.E.C.H_uma.JPG"),
@@ -40,12 +40,55 @@ class MyApp extends StatelessWidget {
 
                 ),
               ),
-              Container(
-                child: const Row(
-                  children:<Widget> [
-                    Icon(Icons.add_shopping_cart)],
+             Card(
+                color: Colors.white,
+               // padding: EdgeInsets.all(10.0),
+                margin: EdgeInsets.symmetric(vertical:10.0, horizontal: 25.0),
+                child: Padding(
+                  padding:EdgeInsets.all(10),
+                  child: Row(
+                    children:<Widget> [
+                      Icon(Icons.phone,
+                  
+                       // size: 100,
+                        color: Colors.teal,
+                      ),
+                      SizedBox(
+                        width:10,
+                      ),
+                      Text("+234 8123408520",
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20,
+                      ),)
+                    ],
+                  ),
                 ),
 
+              ),
+              Card(
+                color: Colors.white,
+               // padding: EdgeInsets.all(10),
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child:Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children:<Widget> [
+                      Icon(Icons.mail),
+                      SizedBox(width: 10,),
+                      Text('agberterkuma2020@gmail.com',
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color:Colors.teal,
+                        ),
+
+                      ),
+
+                    ],
+                  ),
+                ) ,
               )
             ],
 
