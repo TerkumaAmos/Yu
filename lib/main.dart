@@ -2,60 +2,56 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-  const MyApp(),
+      MyApp()
   );
-}
 
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return
-      MaterialApp(
-        home: Scaffold(
-          backgroundColor:Colors.teal,
-          body: SafeArea(
-            child:Row(
-              //mainAxisSize:  MainAxisSize.min,
-            //  verticalDirection: VerticalDirection.up,
-             // mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-              Container(
-              height: 100.0,
-              width: 30.0,
-              color: Colors.white,
-              child:const Text("Container 1"),
+    return  MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body:SafeArea(
+          child:Column(
+            children:<Widget>[
+              const CircleAvatar(
+                radius: 60.0,
+                //backgroundColor: Colors.red,
+                backgroundImage: AssetImage("Images/T.E.C.H_uma.JPG"),
               ),
-                SizedBox(
-                  width: 80.0,
-                ),
-                Container(
-                  width:30.0,
-                height: 100.0,
-                color: Colors.blue,
-                  child:Text("Container 2"),
-                ),
-                SizedBox(
-                  width: 80.0,
-                ),
-                Container(
-                  width: 30.0,
-                  height: 100,
+              Text("T.E.C.H_uma",
+                style:TextStyle(
+                  fontSize: 40.0,
                   color: Colors.white,
-                  child: Text('Container 3'),
+                  fontWeight: FontWeight.bold,
                 ),
-                SizedBox(width: 80.0,),
+  
+              ),
+              Text("FLUTO PRESIDO",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 20.0,
+                  letterSpacing: 2.5,
 
-              ],
-            ),
-            ),
-          ),
-        );
+                ),
+              ),
+              Container(
+                child: const Row(
+                  children:<Widget> [
+                    Icon(Icons.add_shopping_cart)],
+                ),
 
+              )
+            ],
+
+          )
+        ),
+      ),
+    );
   }
 }
-
-
