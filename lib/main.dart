@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body:SafeArea(
           child:Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children:<Widget>[
               CircleAvatar(
                 radius: 60.0,
@@ -31,6 +32,8 @@ class MyApp extends StatelessWidget {
                 ),
   
               ),
+              SizedBox(height: 20,),
+
               Text("FLUTO PRESIDO",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -41,7 +44,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
              Card(
-                color: Colors.white,
+               // color: Colors.white,
                // padding: EdgeInsets.all(10.0),
                 margin: EdgeInsets.symmetric(vertical:10.0, horizontal: 25.0),
                 child: Padding(
@@ -68,7 +71,7 @@ class MyApp extends StatelessWidget {
 
               ),
               Card(
-                color: Colors.white,
+               // color: Colors.white,
                // padding: EdgeInsets.all(10),
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child:Padding(
