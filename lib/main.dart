@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
               ),
               Text("T.E.C.H_uma",
                 style:TextStyle(
-                  fontSize: 40.0,
+                  fontSize: 50.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
                 ),
